@@ -8,7 +8,7 @@ _Step 2:_ Run the consumer tests (publishing the pact contract)
 
 _Step 3:_ Run the provider tests (verifying the provider)
 
-_step 4:_ Take a look at the pact broker
+_Step 4:_ Take a look at the pact broker
 
 You can modify the provider and increment the provider version get a demo of the Pact Matrix
 
