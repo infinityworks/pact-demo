@@ -2,6 +2,16 @@
 
 An example repo that shows a consumer of an api and the provider of that API being integrated with a locally hosted Pact Broker.
 
+_Step 1:_ Run the Pact Broker
+
+_Step 2:_ Run the consumer tests (publishing the pact contract)
+
+_Step 3:_ Run the provider tests (verifying the provider)
+
+_step 4:_ Take a look at the pact broker
+
+You can modify the provider and increment the provider version get a demo of the Pact Matrix
+
 ## Consumer
 
 The consumer is written to look similar to an AWS Lambda function. When invoked it will make an external API request to the Demo Provider API.
