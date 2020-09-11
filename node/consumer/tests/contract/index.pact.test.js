@@ -4,8 +4,8 @@ const { publishPact } = require('../../publishPact')
 const { handler } = require('../../index');
 const path = require('path')
 
-const consumerName = 'Demo API Consumer'
-const providerName = 'Demo API Provider'
+const consumerName = 'Demo API Node JS Consumer'
+const providerName = 'Demo API Node JS Provider'
 const pactDir = path.resolve(process.cwd(), 'pacts')
 
 const provider = new Pact({

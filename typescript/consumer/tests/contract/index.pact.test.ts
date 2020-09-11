@@ -7,8 +7,8 @@ import { publishPact } from '../../publishPact'
 import { handler } from '../../index'
 import { ProcessedRecord } from 'interfaces/Records'
 
-const consumerName = 'Demo API Consumer'
-const providerName = 'Demo API Provider'
+const consumerName = 'Demo API Typescript Consumer'
+const providerName = 'Demo API Typescript Provider'
 const pactDir = path.resolve(process.cwd(), 'pacts')
 
 const provider = new Pact({

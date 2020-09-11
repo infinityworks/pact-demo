@@ -12,7 +12,7 @@ describe('Pact Verification', () => {
 
     it('Should meet the terms of the pact', async () => {
         const opts = {
-            provider: 'Demo API Provider',
+            provider: 'Demo API Node JS Provider',
             providerBaseUrl: 'http://localhost:8080',
             pactBrokerUrl: 'http://localhost:9292',
             publishVerificationResult: true,
