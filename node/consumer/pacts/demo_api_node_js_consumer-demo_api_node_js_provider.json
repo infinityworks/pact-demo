@@ -1,9 +1,9 @@
 {
   "consumer": {
-    "name": "Demo API Consumer"
+    "name": "Demo API Node JS Consumer"
   },
   "provider": {
-    "name": "Demo API Provider"
+    "name": "Demo API Node JS Provider"
   },
   "interactions": [
     {

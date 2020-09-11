@@ -12,6 +12,8 @@ _Step 4:_ Take a look at the pact broker
 
 You can modify the provider and increment the provider version get a demo of the Pact Matrix
 
+The same example is available in Typescript and Node JS. Just pick whichever you prefer!
+
 ## Consumer
 
 The consumer is written to look similar to an AWS Lambda function. When invoked it will make an external API request to the Demo Provider API.
@@ -36,5 +38,12 @@ A docker compose file is included that will let you spin up an instance of the t
 you can start this by running `docker-compose up` from the Pact Broker directory. By default the broker will be running on `localhost:9292`
 
 from the pact broker you can see what contracts the consumer has published for its providers and what versions of providers have validated against those contracts
+
+### Pacts
+
+![Pacts](pacts.png)
+
+
+### Pact Matrix
 
 ![Pact Matrix](pact-matrix.png)

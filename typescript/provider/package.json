@@ -1,0 +1,24 @@
+{
+  "name": "provider",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test:unit": "jest ./tests/unit/*.test.ts",
+    "test:contract": "jest ./tests/contract/*.test.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/uuid": "^8.3.0",
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.1.1",
+    "@types/jest": "^26.0.13",
+    "jest": "^24.9.0",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "consumer": {
+    "name": "Demo API Typescript Consumer"
+  },
+  "provider": {
+    "name": "Demo API Typescript Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for JSON data",
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": "d30a7995-1bd2-4940-b7b5-59e69fc122da",
+          "description": "some arbitrary text"
+        },
+        "matchingRules": {
+          "$.body.id": {
+            "match": "type"
+          },
+          "$.body.description": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
