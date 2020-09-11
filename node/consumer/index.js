@@ -14,17 +14,13 @@ const processData = (data) => {
 const handler = async () => {
     console.log(`Fetching Data from ${PROVIDER_URL}`)
 
-    try {
-        const { data } = await axios.get(PROVIDER_URL)
+    const { data } = await axios.get(PROVIDER_URL)
 
-        console.log(data)
-        const processedData = processData(data)
+    console.log(data)
+    const processedData = processData(data)
 
-        console.log(processedData)
-        return processedData
-    } catch (err) {
-        console.log(err)
-    }
+    console.log(processedData)
+    return processedData
 }
 
 module.exports = { handler }

@@ -2,12 +2,17 @@
 const axios = require('axios')
 const { handler } = require('../../index')
 
-jest.mock('axios')
+const mockAxiosGet = jest.spyOn(axios, 'get')
+
+beforeEach(() => {
+    jest.resetAllMocks()
+})
 
 describe('when the provider gives valid data as a response', () => {
     let result
+
     beforeEach(async () => {
-        axios.get.mockResolvedValueOnce({
+        mockAxiosGet.mockResolvedValueOnce({
             data: {
                 id: 'some-mocked-id-string',
                 description: 'some-mock-description-string'
@@ -29,5 +34,23 @@ describe('when the provider gives valid data as a response', () => {
             id: expect.any(String),
             description: expect.any(String),
         })
+    })
+})
+
+
+describe('when the provder api responds with a 500 error', () => {
+    let errorResult
+
+    beforeEach(async () => {
+        mockAxiosGet.mockRejectedValueOnce(new Error('fake-api-error'))
+        try {
+            await handler()
+        } catch (err) {
+            errorResult = err
+        }
+    })
+
+    it('should throw the error presented by axios', () => {
+        expect(errorResult).toEqual(new Error('fake-api-error'))
     })
 })

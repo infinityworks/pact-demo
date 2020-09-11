@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test:unit": "jest ./tests/unit/*.test.js",
-    "test:contract": "jest ./tests/contract/*.test.js"
+    "test:unit": "jest ./tests/unit/*.test.ts",
+    "test:contract": "jest ./tests/contract/*.test.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.8",
