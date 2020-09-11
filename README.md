@@ -1,4 +1,4 @@
-# Pact Consumer Demo
+# Pact Demo
 
 An example repo that shows a consumer of an api and the provider of that API being integrated with a locally hosted Pact Broker.
 
