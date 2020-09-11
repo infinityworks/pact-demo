@@ -1,0 +1,17 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:unit": "jest ./tests/unit/*.test.js",
+    "test:contract": "jest ./tests/contract/*.test.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "@pact-foundation/pact": "^9.1.1"
+  }
+}
