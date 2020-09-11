@@ -36,3 +36,5 @@ A docker compose file is included that will let you spin up an instance of the t
 you can start this by running `docker-compose up` from the Pact Broker directory. By default the broker will be running on `localhost:9292`
 
 from the pact broker you can see what contracts the consumer has published for its providers and what versions of providers have validated against those contracts
+
+![Pact Matrix](pact-matrix.png)
