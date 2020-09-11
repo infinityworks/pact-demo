@@ -1,10 +1,9 @@
-const { Verifier } = require('@pact-foundation/pact')
-
-const { app } = require('../../server')
-
+import { Verifier } from '@pact-foundation/pact'
+import { app } from '../../server'
 
 describe('Pact Verification', () => {
-    let server
+    let server: any = null
+
     beforeAll(() => {
         console.log('Starting Provicer Service For Testing')
         server = app.listen(8080)
@@ -16,7 +15,7 @@ describe('Pact Verification', () => {
             providerBaseUrl: 'http://localhost:8080',
             pactBrokerUrl: 'http://localhost:9292',
             publishVerificationResult: true,
-            providerVersion: '2.0.0',
+            providerVersion: '3.0.0',
         }
         const result = await (new Verifier()).verifyProvider(opts)
         console.log(result)

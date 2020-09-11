@@ -1,5 +1,5 @@
-const express = require('express')
-const uuid = require('uuid')
+import express from 'express'
+import { v4 as uuid } from 'uuid';
 const app = express()
 
 app.get('/', (req, res) => {
@@ -11,4 +11,6 @@ app.get('/', (req, res) => {
     res.json(response)
 })
 
-module.exports = { app }
+export {
+    app
+}

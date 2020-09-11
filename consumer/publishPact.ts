@@ -1,6 +1,6 @@
 const { Publisher } = require('@pact-foundation/pact-node')
 
-const publishPact = (pactFileDir, consumerVersion, tags) => {
+const publishPact = (pactFileDir: string, consumerVersion: string, tags: Array<string>) => {
     let opts = {
         pactBroker: 'localhost:9292',
         pactFilesOrDirs: [pactFileDir],
@@ -15,6 +15,6 @@ const publishPact = (pactFileDir, consumerVersion, tags) => {
     return publisher.publish()
 }
 
-module.exports = {
+export {
     publishPact
 }

@@ -4,14 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test:unit": "jest ./tests/unit/*.test.js",
-    "test:contract": "jest ./tests/contract/*.test.js"
+    "build": "tsc",
+    "test:unit": "jest ./tests/unit/*.test.ts",
+    "test:contract": "jest ./tests/contract/*.test.ts"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "axios": "^0.20.0"
   },
   "devDependencies": {
+    "@pact-foundation/pact": "^9.1.1",
+    "@types/jest": "^26.0.13",
     "jest": "^24.9.0",
-    "@pact-foundation/pact": "^9.1.1"
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
   }
 }
