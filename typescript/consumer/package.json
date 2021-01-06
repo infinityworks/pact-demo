@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
-    "axios": "^0.20.0"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@pact-foundation/pact": "^9.1.1",
